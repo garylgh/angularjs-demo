@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angularjs demo</title>
+</head>
+<body ng-cloak>
+    <div>Hello World!</div>
+    <ul class="menu">
+		<li><a href="#/view1">view1</a></li>
+		<li><a href="#/view2">view2</a></li>
+	</ul>
+
+	<div ng-view >
+	</div>
+    <script src="./bower_components/requirejs/require.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        requirejs([ './public/js/requirejs-config' ], function(common) {
+            // requirejs([ 'index' ]);
+        });
+    </script>
+</body>
+</html>
